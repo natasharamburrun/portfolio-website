@@ -5,11 +5,37 @@
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $base-white;
+  color: $button-green;
+  width: 200px;
+  height: 48px;
+}
 
+.primary-button:hover {
+  color: $button-turquoise;
+}
 
+button:disabled,
+button[disabled]{
+  color: $button-grey;
 }
 
 .secondary-button {
+  font-family: 'Public Sans', sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $base-white;
+  width: 200px;
+  height: 48px;
+}
 
+.secondary-button:hover {
+  color: $button-black;
+}
+
+button:disabled,
+button[disabled]{
+  color: $button-white;
 }
