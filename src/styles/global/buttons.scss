@@ -27,12 +27,21 @@
 
 .arrow-down span {
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-bottom: 1px solid $button-turquoise;
   border-right: 1px solid $button-turquoise;
-  transform: translate(165% , 40%) rotate(45deg)
+  transform: translate(215% , 75%) rotate(45deg)
 }
+
+.arrow-down span:nth-child(1) {
+  opacity: 0.25;
+}
+
+.arrow-down span:nth-child(2) {
+  opacity: 0.5;
+}
+
 
 a:hover {
   background-color: $button-turquoise;
