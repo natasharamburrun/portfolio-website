@@ -40,8 +40,8 @@ function Homepage() {
           <source media="(min-width: 768px)" srcSet={`${tabletProfile}, ${tabletProfile2} 2x`} />
           <img className="portfolio-img" src={`${mobileProfile}`} alt="" srcSet={`${mobileProfile2} 2x`} />
         </picture>
-        <hr />
         <div className="about-me-wrapper">
+        <hr />
           <h2 className="header">About Me</h2>
           <p className="description">I’m a front-end developer looking for a new role in an exciting company.
             I focus on writing accessible HTML, using modern CSS practices and writing clean
@@ -52,11 +52,12 @@ function Homepage() {
             you to check out my work.
           </p>
           <button className="portfolio-button button secondary-button">Go to portfolio</button>
-        </div>
         <hr />
+        </div>
       </article>
       <article className="contact-me-section">
         <h2 className="text">Interested in doing a project together?</h2>
+        <hr />
         <button className="button secondary-button">Contact me</button>
       </article>
     </section>

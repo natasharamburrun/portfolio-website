@@ -24,10 +24,19 @@ hr {
   opacity: 0.15;
 }
 
-hr:nth-child(1) {
-  width: 80px;
+hr:nth-child(2) {
+  display: none;
 
+  @include breakpoint(lg) {
+  display: block;
+  min-width: 113px;
+  
+    @include breakpoint(xxl) {
+    min-width: 534px;
+    }
+  }
 }
+
 
 .contact-me-section {
   display: flex;
@@ -44,7 +53,7 @@ hr:nth-child(1) {
 }
 
 .portfolio-button {
-  margin-bottom: 51px;
+  margin-bottom: 47px;
 }
 
 .description {
@@ -83,9 +92,9 @@ hr:nth-child(1) {
 }
 
 .about-me-wrapper {
-
   @include breakpoint(lg) {
   height: 600px;
+  min-width: 339px;
   padding: 96px 40px 96px 69px;
 
     @include breakpoint(xl) {
