@@ -83,8 +83,13 @@ hr:nth-child(1) {
 }
 
 .about-me-wrapper {
+
   @include breakpoint(lg) {
   height: 600px;
   padding: 96px 40px 96px 69px;
+
+    @include breakpoint(xl) {
+      padding-left: 125px;
+    }
   }
 }
