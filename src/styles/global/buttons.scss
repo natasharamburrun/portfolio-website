@@ -1,22 +1,57 @@
 .primary-button {
+  display: flex;
+  align-items: center;
+  background-color: $button-green;
+  color: $base-white;
+  width: 200px;
+}
+
+.button-title {
   font-family: 'Public Sans', sans-serif;
   font-size: 12px;
   line-height: 14px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $button-green;
-  width: 200px;
-  height: 48px;
+  text-decoration: none;
+  padding-left: 17px;
 }
 
-.primary-button:hover {
-  color: $button-turquoise;
+.arrow-down {
+  position: relative;
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+  background-color: #1e3444;
+}
+
+.arrow-down span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 1px solid $button-turquoise;
+  border-right: 1px solid $button-turquoise;
+  transform: translate(165% , 40%) rotate(45deg)
+}
+
+a:hover {
+  background-color: $button-turquoise;
+  .arrow-down {
+    background-color: #56a292;
+  }
+  .arrow-down span {
+  border-bottom: 1px solid $base-white;
+  border-right: 1px solid $base-white;
+  }
+}
+
+a:link {
+    text-decoration: none;
 }
 
 button:disabled,
 button[disabled]{
-  color: $button-grey;
+  background-color: $button-grey;
 }
 
 .secondary-button {
@@ -26,7 +61,7 @@ button[disabled]{
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: $base-white;
+  background-color: $base-white;
   width: 200px;
   height: 48px;
 }
