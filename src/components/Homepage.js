@@ -16,20 +16,24 @@ function Homepage() {
 
   return (
     <section className="homepage">
-      <picture>
-        <source media="(min-width: 1024px)" srcSet={`${desktopHero}, ${desktopHero2} 2x`} />
-        <source media="(min-width: 768px)" srcSet={`${tabletHero}, ${tabletHero2} 2x`} />
-        <img className="hero-img" src={`${mobileHero}`} alt="" srcSet={`${mobileHero2} 2x`} />
-      </picture>
-      <h1 className="bio">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
-      <a href="about-me" className="button primary-button">
-        <div class="arrow-down">
-          <span></span>
-          <span></span>
-          <span></span>
+      <article className="hero-section">
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={`${desktopHero}, ${desktopHero2} 2x`} />
+          <source media="(min-width: 768px)" srcSet={`${tabletHero}, ${tabletHero2} 2x`} />
+          <img className="hero-img" src={`${mobileHero}`} alt="" srcSet={`${mobileHero2} 2x`} />
+        </picture>
+        <div className="bio-wrapper">
+          <h1 className="bio">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+          <a href="about-me" className="button primary-button">
+            <div class="arrow-down">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className="arrow-title">About Me</div>
+          </a>
         </div>
-        <div className="arrow-title">About Me</div>
-      </a>
+      </article>
       <article className="about-me-section">
         <picture>
           <source media="(min-width: 1024px)" srcSet={`${desktopProfile}, ${desktopProfile2} 2x`} />
@@ -37,15 +41,18 @@ function Homepage() {
           <img className="portfolio-img" src={`${mobileProfile}`} alt="" srcSet={`${mobileProfile2} 2x`} />
         </picture>
         <hr />
-        <h2 className="header">About Me</h2>
-        <p className="description">I’m a front-end developer looking for a new role in an exciting company.
+        <div className="about-me-wrapper">
+          <h2 className="header">About Me</h2>
+          <p className="description">I’m a front-end developer looking for a new role in an exciting company.
             I focus on writing accessible HTML, using modern CSS practices and writing clean
             JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to
             whatever tools are required. I’m based in London, UK, but I’m happy working remotely
             and have experience in remote teams. When I’m not coding, you’ll find me outdoors.
             I love being out in nature whether that’s going for a walk, run or cycling. I’d love
-            you to check out my work.</p>
-        <button className="portfolio-button button secondary-button">Go to portfolio</button>
+            you to check out my work.
+          </p>
+          <button className="portfolio-button button secondary-button">Go to portfolio</button>
+        </div>
         <hr />
       </article>
       <article className="contact-me-section">

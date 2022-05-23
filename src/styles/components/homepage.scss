@@ -24,11 +24,23 @@ hr {
   opacity: 0.15;
 }
 
+hr:nth-child(1) {
+  width: 80px;
+
+}
+
 .contact-me-section {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
   margin: 115px 0 80px;
+
+  @include breakpoint(lg) {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
 }
 
 .portfolio-button {
@@ -42,4 +54,37 @@ hr {
 
 .text {
   text-align: center;
+
+  @include breakpoint(lg) {
+    width: 350px;
+    text-align: left;
+  }
+}
+
+.hero-section {
+  position: relative;
+    display: inline;
+}
+
+.bio-wrapper {
+  @include breakpoint(lg) {
+    position: absolute;
+    background-color: white;
+    bottom: 2px;
+    width: 515px;
+    left: -1px;
+  }
+}
+
+.about-me-section {
+  @include breakpoint(lg) {
+    display: flex;
+  }
+}
+
+.about-me-wrapper {
+  @include breakpoint(lg) {
+  height: 600px;
+  padding: 96px 40px 96px 69px;
+  }
 }
