@@ -14,3 +14,32 @@
 .homepage-button {
   display: flex;
 }
+
+.portfolio-img {
+  margin: 96px 0 32px;
+}
+
+hr {
+  color: $base-black;
+  opacity: 0.15;
+}
+
+.contact-me-section {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 115px 0 80px;
+}
+
+.portfolio-button {
+  margin-bottom: 51px;
+}
+
+.description {
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.text {
+  text-align: center;
+}

@@ -6,7 +6,7 @@
   width: 200px;
 }
 
-.button-title {
+.arrow-title {
   font-family: 'Public Sans', sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -58,12 +58,15 @@ a:link {
     text-decoration: none;
 }
 
-button:disabled,
+a:disabled,
 button[disabled]{
   background-color: $button-grey;
 }
 
 .secondary-button {
+  height: 48px;
+  border: 1px solid;
+  padding: 0 38px;
   font-family: 'Public Sans', sans-serif;
   font-size: 12px;
   line-height: 14px;
@@ -71,15 +74,15 @@ button[disabled]{
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: $base-white;
-  width: 200px;
-  height: 48px;
 }
 
 .secondary-button:hover {
-  color: $button-black;
+  background-color: $base-black;
+  color: $base-white;
+  border: none;
 }
 
 button:disabled,
 button[disabled]{
-  color: $base-white;
+  background-color: $base-white;
 }
