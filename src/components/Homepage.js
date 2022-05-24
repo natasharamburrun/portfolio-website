@@ -26,7 +26,7 @@ function Homepage() {
         <div className="bio-wrapper">
           <h1 className="bio">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
           <a href="about-me" className="button primary-button">
-            <div class="arrow-down">
+            <div className="arrow-down">
               <span></span>
               <span></span>
               <span></span>
