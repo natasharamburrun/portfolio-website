@@ -1,13 +1,9 @@
-// .navigation {
-//   display: flex;
-//   flex-direction: row-reverse;
-// }
-
 .navigation {
   max-width: 1111px;
   position: sticky;
   z-index: 1000;
   top: 0;
+  background-color: $base-white;
   
   @include breakpoint(lg) {
     margin: 64px auto 54px;
@@ -19,6 +15,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 32px;
+  @include breakpoint(xxl) {
+    margin: 0;
+  }
 }
 
 .navbar-burger {
@@ -40,7 +39,9 @@
   right: 100%;
   padding-right: 32px;
   @include breakpoint(lg) {
+    position: initial;
     right: 0;
+    padding: 0;
   }
 }
 
@@ -51,11 +52,6 @@
     top: 0;
   }
 }
-
-// .logo {
-//   margin: 32px 0;
-// }
-
 
 .menu {
   display: flex;
@@ -72,7 +68,8 @@
     flex-direction: row;
     justify-content: flex-end;
     background-color: $base-white;
-    height: 32px;
+    height: auto;
+    width: auto;
   }
 }
 
