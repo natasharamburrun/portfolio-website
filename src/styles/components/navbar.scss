@@ -5,16 +5,25 @@
 
 .navigation {
   max-width: 1111px;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
   
   @include breakpoint(lg) {
     margin: 64px auto 54px;
   }
 }
 
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px;
+}
+
 .navbar-burger {
   display: flex;
   align-items: center;
-  padding: 32px;
 }
 
 .nav-hamburger {
@@ -65,11 +74,6 @@
     background-color: $base-white;
     height: 32px;
   }
-}
-
-.menu-container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .menu-item {
