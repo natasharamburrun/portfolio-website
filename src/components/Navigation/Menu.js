@@ -1,24 +1,23 @@
 // import React from "react"
 // import {  Link } from "react-router-dom";
-// import Burger from "./Hamburger";
 
-// const Menu = ({ navbarOpen, onClose }) => {
+// const Menu = ({navbarOpen}) => {
 
 //   return (
 //     <div className="navbar-menu">
-//       <nav className={navbarOpen ? "nav-item active" : " nav-item"}>
-//         <ul className='pages'>
-//           <li className='page-name'>
+//     <div className={navbarOpen ? "nav-item active" : " nav-item"}>
+//         <ul className='menu'>
+//           <li className='menu-item'>
 //             <Link to="/">Home</Link>
 //           </li>
-//           <li className='page-name'>
+//           <li className='menu-item'>
 //             <Link to="/portfolio">Portfolio</Link>
 //           </li>
-//           <li className='page-name'>
+//           <li className='menu-item'>
 //             <Link to="/contact-me">Contact Me</Link>
 //           </li>
 //         </ul>
-//       </nav>
+//       </div>
 //     </div>
 //   );
 // }

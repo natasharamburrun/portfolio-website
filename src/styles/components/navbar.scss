@@ -1,21 +1,19 @@
-.navigation {
-  display: flex;
-  flex-direction: row-reverse;
-}
+// .navigation {
+//   display: flex;
+//   flex-direction: row-reverse;
+// }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  z-index: 1000;
+.navigation {
   max-width: 1111px;
   
   @include breakpoint(lg) {
-    // margin: 64px auto 54px;
+    margin: 64px auto 54px;
   }
 }
 
-.menu-container {
+.navbar-burger {
+  display: flex;
+  align-items: center;
   padding: 32px;
 }
 
@@ -28,22 +26,29 @@
 .nav-item {
   display: flex;
   position: fixed;
+  z-index: 1000;
   top: 0;
   right: 100%;
   padding-right: 32px;
+  @include breakpoint(lg) {
+    right: 0;
+  }
 }
 
 .nav-item.active {
   right: 0;
   top: 88px;
+  @include breakpoint(lg) {
+    top: 0;
+  }
 }
 
-.logo {
-  margin: 32px 0;
-}
+// .logo {
+//   margin: 32px 0;
+// }
 
 
-.pages {
+.menu {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -57,10 +62,17 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    background-color: $base-white;
+    height: 32px;
   }
 }
 
-.page-name {
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 12px;
@@ -86,4 +98,7 @@ a {
   border: none;
   background-color: $base-white;
   padding: 0;
+  @include breakpoint(lg) {
+    display: none;
+  }
 }
