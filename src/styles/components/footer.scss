@@ -1,0 +1,40 @@
+.footer {
+  padding: 56px 0;
+  background-color: $primary-color-greyish-dark-blue;
+  color: $base-white;
+  fill: $base-white;
+}
+
+.footer-logo {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-item {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Public Sans", sans-serif;
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding-bottom: 32px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  margin: 7px;
+}

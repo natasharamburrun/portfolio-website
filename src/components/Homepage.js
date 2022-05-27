@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import mobileHero from "../assets/images/homepage/mobile/image-homepage-hero.jpg";
 import mobileHero2 from "../assets/images/homepage/mobile/image-homepage-hero@2x.jpg";
 import tabletHero from "../assets/images/homepage/tablet/image-homepage-hero.jpg";
@@ -61,7 +60,6 @@ function Homepage() {
         <hr />
         <button className="button secondary-button">Contact me</button>
       </article>
-      <Footer />
     </section>
   );
 }
