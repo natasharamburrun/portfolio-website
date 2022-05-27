@@ -87,7 +87,7 @@
   }
 }
 
-a {
+.menu-item a {
   color: $base-white;
   @include breakpoint(lg) {
     color: $primary-color-greyish-dark-blue;

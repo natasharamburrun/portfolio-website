@@ -1,14 +1,34 @@
 .footer {
+  display: flex;
+  flex-direction: column;
   padding: 56px 0;
   background-color: $primary-color-greyish-dark-blue;
   color: $base-white;
   fill: $base-white;
+
+  @include breakpoint(lg) {
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px; 
+  }
+}
+
+.footer-content {
+  @include breakpoint(lg) {
+    display: flex; 
+  }
 }
 
 .footer-logo {
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
+  
+  @include breakpoint(lg) {
+    padding-right: 42px;
+    padding-bottom: 0;
+  }
 }
 
 .footer-links {
@@ -17,6 +37,10 @@
   align-items: center;
   padding-left: 0;
   margin: 0;
+
+  @include breakpoint(lg) {
+    flex-direction: row; 
+  }
 }
 
 .footer-item {
@@ -26,8 +50,17 @@
   line-height: 14px;
   font-family: "Public Sans", sans-serif;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: $base-white;
   padding-bottom: 32px;
+
+  @include breakpoint(lg) {
+    padding-bottom: 0;
+    padding-right: 42px;
+  }
+}
+
+.footer-item a {
+  color: $base-white;
 }
 
 .footer-socials {
