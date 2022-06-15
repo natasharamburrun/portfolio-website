@@ -24,7 +24,7 @@ hr {
   opacity: 0.15;
 }
 
-hr:nth-child(2) {
+.homepage-hr:nth-child(2) {
   display: none;
 
   @include breakpoint(lg) {
@@ -38,11 +38,11 @@ hr:nth-child(2) {
 }
 
 
-.contact-me-section {
+.contact-me-link-section {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  margin: 115px 0 80px;
+  // margin: 115px 0 80px;
 
   @include breakpoint(lg) {
     flex-flow: row;
