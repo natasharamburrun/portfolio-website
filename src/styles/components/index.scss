@@ -1,6 +1,6 @@
 .index {
-  max-width: 1100px;
   padding: 0 32px;
+  max-width: 1100px;
 
   @include breakpoint(xl) {
     margin: 0 auto 165px;
@@ -8,8 +8,11 @@
 }
 
 .index-img {
-  width: 100%;
   margin-bottom: 32px;
+  width: 100%;
+  @include breakpoint(lg) {
+    margin: 0;
+  }
 }
 
 article {
@@ -18,4 +21,35 @@ article {
 
 .index-button {
   padding: 17px 32px;
+}
+
+.index-hr {
+  margin-top: 60px;
+}
+
+.index-hr:nth-child(1) {
+  margin: 0;
+} 
+
+.index-portfolio {
+  @include breakpoint(lg) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+.index-content {
+  @include breakpoint(lg) {
+    width: 281px;
+  }
+}
+
+.index-header {
+  margin: 32px 0 29px;
+}
+
+.index-description {
+  margin-bottom: 32px;
+  font-size: 15px;
 }

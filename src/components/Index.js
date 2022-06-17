@@ -32,53 +32,69 @@ const Index = () => {
   return (
     <section className='index'>
       <article className='index-portfolio'>
+        <div className='index-image'>
+          <picture>
+            <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioManage}, ${desktopPortfolioManage2} 2x`} />
+            <source media='(min-width: 768px)' srcSet={`${tabletPortfolioManage}, ${tabletPortfolioManage2} 2x`} />
+            <img className='index-img' src={`${mobilePortfolioManage}`} alt='' srcSet={`${mobilePortfolioManage2} 2x`} />
+          </picture>
+        </div>
+        <div className='index-content'>
+          <hr className='index-hr'/>
+          <h1 className='index-header'>Manage</h1>
+          <p className='index-description'>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
+          </p>
+          <a href='/manage' className='index-button button secondary-button'>View Project</a>
+          <hr className='index-hr'/>
+        </div>
+      </article>
+      <article className='index-portfolio'>
+      <div className='index-image'>
         <picture>
-          <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioManage}, ${desktopPortfolioManage2} 2x`} />
-          <source media='(min-width: 768px)' srcSet={`${tabletPortfolioManage}, ${tabletPortfolioManage2} 2x`} />
-          <img className='index-img' src={`${mobilePortfolioManage}`} alt='' srcSet={`${mobilePortfolioManage2} 2x`} />
+          <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioBookmark}, ${desktopPortfolioBookmark2} 2x`} />
+          <source media='(min-width: 768px)' srcSet={`${tabletPortfolioBookmark}, ${tabletPortfolioBookmark2} 2x`} />
+          <img className='index-img' src={`${mobilePortfolioBookmark}`} alt='' srcSet={`${mobilePortfolioBookmark2} 2x`} />
         </picture>
-        <hr />
-        <h1 className='header'>Manage</h1>
-        <p className='description'>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
-        </p>
-        <a href='/manage' className='index-button button secondary-button'>View Project</a>
-        <hr />
+       </div>
+       <div className='index-content'>
+          <h1 className='index-header'>Bookmark</h1>
+          <p className='index-description'>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.
+          </p>
+          <a href='/bookmark' className='index-button button secondary-button'>View Project</a>
+          <hr className='index-hr'/>
+       </div>
       </article>
       <article className='index-portfolio'>
-       <picture>
-         <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioBookmark}, ${desktopPortfolioBookmark2} 2x`} />
-         <source media='(min-width: 768px)' srcSet={`${tabletPortfolioBookmark}, ${tabletPortfolioBookmark2} 2x`} />
-         <img className='index-img' src={`${mobilePortfolioBookmark}`} alt='' srcSet={`${mobilePortfolioBookmark2} 2x`} />
-       </picture>
-        <h1 className='header'>Bookmark</h1>
-        <p className='description'>This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.
-        </p>
-        <a href='/bookmark' className='index-button button secondary-button'>View Project</a>
-        <hr />
-      </article>
-      <article className='index-portfolio'>
-       <picture>
-         <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioInsure}, ${desktopPortfolioInsure2} 2x`} />
-         <source media='(min-width: 768px)' srcSet={`${tabletPortfolioInsure}, ${tabletPortfolioInsure2} 2x`} />
-         <img className='index-img' src={`${mobilePortfolioInsure}`} alt='' srcSet={`${mobilePortfolioInsure2} 2x`} />
-       </picture>
-        <h1 className='header'>Insure</h1>
-        <p className='description'>This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.
+      <div className='index-image'>
+        <picture>
+          <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioInsure}, ${desktopPortfolioInsure2} 2x`} />
+          <source media='(min-width: 768px)' srcSet={`${tabletPortfolioInsure}, ${tabletPortfolioInsure2} 2x`} />
+          <img className='index-img' src={`${mobilePortfolioInsure}`} alt='' srcSet={`${mobilePortfolioInsure2} 2x`} />
+        </picture>
+      </div>
+      <div className='index-content'>
+        <h1 className='index-header'>Insure</h1>
+        <p className='index-description'>This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.
         </p>
         <a href='/insure' className='index-button button secondary-button'>View Project</a>
-        <hr />
+        <hr className='index-hr'/>
+      </div>
       </article>
       <article className='index-portfolio'>
-       <picture>
-         <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioFylo}, ${desktopPortfolioFylo2} 2x`} />
-         <source media='(min-width: 768px)' srcSet={`${tabletPortfolioFylo}, ${tabletPortfolioFylo2} 2x`} />
-         <img className='index-img' src={`${mobilePortfolioFylo}`} alt='' srcSet={`${mobilePortfolioFylo2} 2x`} />
-       </picture>
-        <h1 className='header'>Fylo</h1>
-        <p className='description'>This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
-        </p>
-        <a href='/fylo' className='index-button button secondary-button'>View Project</a>
-        <hr />
+        <div className='index-image'>
+          <picture>
+            <source media='(min-width: 1024px)' srcSet={`${desktopPortfolioFylo}, ${desktopPortfolioFylo2} 2x`} />
+            <source media='(min-width: 768px)' srcSet={`${tabletPortfolioFylo}, ${tabletPortfolioFylo2} 2x`} />
+            <img className='index-img' src={`${mobilePortfolioFylo}`} alt='' srcSet={`${mobilePortfolioFylo2} 2x`} />
+          </picture>
+        </div>
+        <div className='index-content'>
+          <h1 className='index-header'>Fylo</h1>
+          <p className='index-description'>This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.
+          </p>
+          <a href='/fylo' className='index-button button secondary-button'>View Project</a>
+          <hr className='index-hr'/>
+        </div>
       </article>
       <ContactMeLink />
     </section>
