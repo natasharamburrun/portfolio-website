@@ -39,6 +39,10 @@ article {
   }
 }
 
+.index-portfolio:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .index-content {
   @include breakpoint(lg) {
     width: 281px;
