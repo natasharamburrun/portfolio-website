@@ -47,6 +47,10 @@ article {
   @include breakpoint(lg) {
     width: 281px;
   }
+
+  @include breakpoint(xl) {
+    width: 350px;
+  }
 }
 
 .index-header {
